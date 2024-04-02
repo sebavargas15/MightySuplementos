@@ -1,11 +1,11 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     background-color: rgb(110, 106, 106);
 }
@@ -42,10 +42,9 @@ body {
 
 .navbar div a {
     color: white;
-    text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
     margin: 0 10px;
+    text-decoration: none;
 }
 
 .navbar div a:hover {
@@ -56,14 +55,172 @@ body {
     width: 90px;
 }
 
+.navbar-shadow{
+    transition: all 0.3s ease; /* Transición suave de todos los cambios */
+}
+
+.navbar-shadow:hover {
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+}
+
+.navbar-shadow:active {
+    transform: translateY(2px); /* Efecto de hundimiento cuando se hace clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más suave durante el clic */
+}
+
+.right-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.right-links a img {
+    width: 35px;
+}
+
 .carrusel {
     width: 100%;
-    background-color: #ccc;  
+    background-color: #ccc;
 }
-.carousel-item  {
-  width: 100%;
-  height: calc(100vh - 120px); 
-  background-size: cover;
-  background-position: center;
-  background-image: url('./assets/img/asd.jpg');
+
+.carousel-item {
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-size: cover;
+    background-position: center;
+    background-image: url('./assets/img/banner1.jpg');
+    display: flex;
+    flex-direction: column;
+
 }
+
+.title-banner {
+    position: relative;
+    top: 1.5rem;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+
+
+.carousel-item-first-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+
+}
+
+.carousel-item-first-container img {
+
+    width: 600px;
+    height: 500px;
+}
+
+.ul-products {
+    width: 20%;
+    list-style: circle;
+    text-align: left;
+}
+
+.zoom {
+    transition: transform 0.5s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
+}
+
+.p-product-description {
+    width: 20%;
+    letter-spacing: 0.05rem;
+    word-spacing: 2px;
+    text-align: center;
+}
+
+
+.container-btn {
+    position: relative;
+    text-align: center;
+    bottom: 1rem;
+    width: 100%;
+}
+
+.container-btn button {
+    background-color: #000000;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: all 0.3s ease; /* Transición suave de todos los cambios */
+}
+ 
+.container-btn button:hover {
+    background-color: #AC1929;
+    transform: translateY(-2px); /* Efecto de elevación */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+
+}
+
+.container-btn button:active {
+    transform: translateY(2px); /* Efecto de hundimiento cuando se hace clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más suave durante el clic */
+}
+
+
+
+.carousel-item-second-container {
+    position: relative;
+    width: 100%;
+    bottom: 1rem;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+
+}
+
+.container-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.p-price{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+
+.social-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
