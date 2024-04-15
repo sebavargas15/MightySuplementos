@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,7 +9,7 @@
 html,
 body {
     height: 100%;
-    background-color: rgb(110, 106, 106);
+    background-color: rgb(255, 255, 255);
 }
 
 body {
@@ -55,24 +57,29 @@ body {
     width: 90px;
 }
 
-.navbar-shadow{
-    transition: all 0.3s ease; /* Transición suave de todos los cambios */
+.navbar-shadow {
+    transition: all 0.3s ease;
+    /* Transición suave de todos los cambios */
 }
 
 .navbar-shadow:hover {
-    transform: translateY(-2px); /* Efecto de elevación */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    transform: translateY(-2px);
+    /* Efecto de elevación */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    /* Sombra más pronunciada */
 }
 
 .navbar-shadow:active {
-    transform: translateY(2px); /* Efecto de hundimiento cuando se hace clic */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más suave durante el clic */
+    transform: translateY(2px);
+    /* Efecto de hundimiento cuando se hace clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra más suave durante el clic */
 }
 
 .right-links {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
 
 .right-links a img {
@@ -167,20 +174,26 @@ body {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
-    transition: all 0.3s ease; /* Transición suave de todos los cambios */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    transition: all 0.3s ease;
+    /* Transición suave de todos los cambios */
 }
- 
+
 .container-btn button:hover {
     background-color: #AC1929;
-    transform: translateY(-2px); /* Efecto de elevación */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+    transform: translateY(-2px);
+    /* Efecto de elevación */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    /* Sombra más pronunciada */
 
 }
 
 .container-btn button:active {
-    transform: translateY(2px); /* Efecto de hundimiento cuando se hace clic */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más suave durante el clic */
+    transform: translateY(2px);
+    /* Efecto de hundimiento cuando se hace clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra más suave durante el clic */
 }
 
 
@@ -206,7 +219,7 @@ body {
     width: 100%;
 }
 
-.p-price{
+.p-price {
     font-size: 50px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
@@ -224,3 +237,159 @@ body {
     color: white;
 }
 
+/* --------------CARD----------------------- */
+
+/* --------------CARRUSEL NAV BUTONS----------------------- */
+
+
+ /* Estilos para el contenedor de las tarjetas y los botones */
+.containerCardProducts {
+    position: relative;
+  }
+  
+  .prevButtonContainer,
+  .nextButtonContainer {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; /* Para asegurar que estén por encima de las tarjetas */
+  }
+  
+  .prevButtonContainer {
+    left: 3rem; /* Ajusta el espacio izquierdo según sea necesario */
+  }
+  
+  .nextButtonContainer {
+    right: 3rem; /* Ajusta el espacio derecho según sea necesario */
+  }
+  
+  /* Estilos para los botones de navegación */
+  .prevButton,
+  .nextButton {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .prevButton:hover,
+  .nextButton:hover {
+    background-color: #AC1929;
+    transform: translateY(-1px);
+    /* Efecto de elevación */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    /* Sombra más pronunciada */
+  }
+
+.prevButton:active, .nextButton:active{
+    transform: translateY(1px);
+    /* Efecto de hundimiento cuando se hace clic */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra más suave durante el clic */
+}
+
+/* --------------CARRUSEL NAV BUTONS----------------------- */
+
+
+.h2 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 40px;
+    color: #191919;
+    font-family: 'poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700; 
+    
+}
+
+.containerCardProducts {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 20px;
+width: 100%;
+}
+
+.containerCards {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start; /* Alinea las tarjetas al principio */
+   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); */
+    overflow-x: auto; /* Agrega desplazamiento horizontal si es necesario */
+    white-space: nowrap; /* Evita que las tarjetas se envuelvan */
+    padding: 2rem;
+    overflow: hidden; /* Esto ocultará las barras de desplazamiento */
+    margin: 0; /* Quita el margen para que el carrusel no se desborde */
+    border-radius: 20px;
+}
+
+
+.cardProduct>* {
+    padding-top: 5px;
+    
+}
+
+.cardProduct {
+    border: solid 1px #ccc;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+    padding: 0 2rem;
+    margin: 0 30px;
+    width: 300px; /* Ancho fijo para cada tarjeta */
+    margin-right: 20px; /* Espacio entre cada tarjeta */
+}
+
+.cardProduct:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardProduct h3 {
+    font-size: 20px;
+    color: #333;
+}
+
+.cardProduct .pDescription {
+    color: black;
+}
+
+.cardProduct .pPrice {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    /* rojo */
+}
+
+.cardProduct img {
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 300px;
+    width: auto;
+}
+
+.btnCard {
+    background-color: #007bff;
+    /* azul */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.btnCard:hover {
+    background-color: #0056b3;
+    /* azul más oscuro */
+}
+
+
+
+/* --------------FOOTER----------------------- */
